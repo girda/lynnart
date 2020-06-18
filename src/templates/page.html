@@ -1,0 +1,43 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+
+	<div class="slider js-slider">
+		<div class="slider__item">
+            1
+        </div>
+		<div class="slider__item">
+            2
+        </div>
+		<div class="slider__item">
+            3
+        </div>
+	</div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__in">
+                <h2 class="hero__title">
+                    «I  Dream  my  paint,  and  then i paint  my  dream.» 
+                    <span>Vincent van gogh<span>
+                </h2>
+                    
+                <div class="hero__text">
+                    <p>"As an artist, I perceive art as a space of absolute freedom to express myself. In each painting I strive to embody a surreal fantasy world where reality and imagination become a natural extension of each other.</p>
+
+                    <p>In this space without the laws of logic and physics it becomes possible to realize any ideas, even the most incredible ones, through amusing and bizarre forms and symbols.</p>
+
+                    <p>Awaken your imagination and become a wizard for a while! Follow me into this “rabbit hole” to figure out how far imagination can lead us."</p>
+                </div>
+
+                <div class="hero__media"></div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
