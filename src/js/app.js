@@ -1,3 +1,7 @@
 import 'slick-carousel';
 
-$('.js-slider').slick();
+$('.js-slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3
+});

@@ -116,7 +116,7 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPAC
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function($) {\n\n__webpack_require__(/*! slick-carousel */ \"../../node_modules/slick-carousel/slick/slick.js\");\n\n$('.js-slider').slick();\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../../node_modules/jquery/dist/jquery.js\")))\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnc2xpY2stY2Fyb3VzZWwnO1xyXG5cclxuJCgnLmpzLXNsaWRlcicpLnNsaWNrKCk7XHJcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBO0FBQ0E7QSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\n__webpack_require__(/*! slick-carousel */ \"../../node_modules/slick-carousel/slick/slick.js\");\n\n$('.js-slider').slick({\n  centerMode: true,\n  centerPadding: '60px',\n  slidesToShow: 3\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../../node_modules/jquery/dist/jquery.js\")))\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnc2xpY2stY2Fyb3VzZWwnO1xyXG5cclxuJCgnLmpzLXNsaWRlcicpLnNsaWNrKHtcclxuICBjZW50ZXJNb2RlOiB0cnVlLFxyXG4gIGNlbnRlclBhZGRpbmc6ICc2MHB4JyxcclxuICBzbGlkZXNUb1Nob3c6IDNcclxufSk7XHJcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFIQTtBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app.js\n");
 
 /***/ })
 
