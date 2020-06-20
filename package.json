@@ -67,6 +67,11 @@
     "lodash": "^4.3.0"
   },
   "dependencies": {
+    "gsap": "^3.3.3",
+    "imports-loader": "^1.0.0",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "scrollscene": "0.0.20",
     "slick-carousel": "^1.8.1"
   }
 }

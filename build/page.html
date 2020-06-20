@@ -2,24 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Index page</title>
+    <title>Lynnart</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fff" />
     <meta name="format-detection" content="telephone=no" />
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Julius+Sans+One&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Julius+Sans+One&family=Jura:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <header class="header">
+      <header class="header js-header-animate">
         <div class="container">
           <div class="header__in">
-            <div class="logo">
+            <div class="logo js-logo">
               <h1>Emilia lynnyk</h1>
             </div>
-            <ul class="socials">
+            <nav class="nav js-nav">
+              <ul class="nav__list">
+                <li><a class="js-nav-link" href="#about">About</a></li>
+                <li><a class="js-nav-link" href="#gallery">Gallery</a></li>
+                <li><a class="js-nav-link" href="#contact">contact</a></li>
+              </ul>
+            </nav>
+            <ul class="socials js-socials">
               <li><a href="#">
                   <svg class="icon icon-fb">
                     <use xlink:href="img/sprite.svg#icon-fb"></use>
@@ -173,19 +180,71 @@
         <div class="hero__in">
           <div class="hero__overlay"></div>
           <h2 class="hero__title">
-            <span>«I Dream my paint, and then i paint my dream.»</span>
-            <span>Vincent van gogh<span>
+            <span class="js-title">«I Dream my paint, and then i paint my dream.»</span>
+            <span class="js-autor">Vincent van gogh<span>
           </h2>
           <div class="hero__img">
             <img src="img/hero1.jpg" alt="">
           </div>
         </div>
       </section>
-      <section class="about">
+      <div class="cloud--1 cloud" data-parallax-deep="100" style="width: 50px; height: 32.5px">
+        <img src="img/cloud1.png" alt="" style="width: 50px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--2 cloud" data-parallax-deep="80" style="width: 60px; height: 39px">
+        <img src="img/cloud1.png" alt="" style="width: 60px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--3 cloud" data-parallax-deep="60" style="width: 70px; height: 45.5px">
+        <img src="img/cloud.png" alt="" style="width: 70px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--4 cloud" data-parallax-deep="40" style="width: 80px; height: 52px">
+        <img src="img/cloud.png" alt="" style="width: 80px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--5 cloud" data-parallax-deep="35" style="width: 150px; height: 97.5px">
+        <img src="img/cloud1.png" alt="" style="width: 150px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--6 cloud" data-parallax-deep="35" style="width: 170px; height: 110.5px">
+        <img src="img/cloud1.png" alt="" style="width: 170px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--7 cloud" data-parallax-deep="30" style="width: 190px; height: 123.5px">
+        <img src="img/cloud1.png" alt="" style="width: 190px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--8 cloud" data-parallax-deep="30" style="width: 240px; height: 156px">
+        <img src="img/cloud.png" alt="" style="width: 240px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--9 cloud" data-parallax-deep="35" style="width: 90px; height: 58.5px">
+        <img src="img/cloud1.png" alt="" style="width: 90px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--11 cloud" data-parallax-deep="180" style="width: 590px; height: 383.5px">
+        <img src="img/birds1.png" alt="" style="width: 590px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--12 cloud" data-parallax-deep="80" style="width: 590px; height: 383.5px">
+        <img src="img/birds2.png" alt="" style="width: 590px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--13 cloud" data-parallax-deep="80" style="width: 590px; height: 383.5px">
+        <img src="img/birds1.png" alt="" style="width: 590px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <div class="cloud--14 cloud" data-parallax-deep="60" style="width: 590px; height: 383.5px">
+        <img src="img/birds2.png" alt="" style="width: 590px;">
+        <!-- <svg height="26" viewBox="0 0 40 26" width="40" ><g fill="none" fill-rule="evenodd" transform="translate(-4 -11)"><rect height="48" width="48"/><path d="M40.4018094,23.4273903 C41.5108167,24.0299331 42.4098904,24.9003826 43.031949,25.9738413 C43.6548634,27.0487767 44,28.3272802 44,29.744186 C44,31.1610919 43.6548634,32.4395954 43.031949,33.5145308 C42.4090346,34.5894662 41.5083425,35.4608335 40.3972314,36.063467 C39.2861203,36.6661004 37.9645902,37 36.5,37 L11.5,37 C10.0354098,37 8.71387975,36.6661004 7.60276864,36.063467 C6.49165753,35.4608335 5.59096537,34.5894662 4.96805099,33.5145308 C4.3451366,32.4395954 4,31.1610919 4,29.744186 C4,28.3272802 4.3451366,27.0487767 4.96805099,25.9738413 C5.59096537,24.8989059 6.49165753,24.0275386 7.60276864,23.4249051 C7.95321793,23.2348319 8.32459967,23.0714923 8.7148004,22.936931 C8.66311939,22.5930873 8.63636364,22.2414269 8.63636364,21.8837209 C8.63636364,17.8764455 11.994228,14.627907 16.1363636,14.627907 C18.2889806,14.627907 20.2297853,15.505257 21.5975614,16.9105015 C23.1152019,13.4372475 26.6696474,11 30.8125,11 C36.3353475,11 40.8125,15.3313847 40.8125,20.6744186 C40.8125,21.6308381 40.6690426,22.5548423 40.4018094,23.4273903 Z" fill="#4A90E2"/></g></svg> -->
+      </div>
+      <section class="about" id="about">
         <div class="container">
           <div class="about__in">
-            <h2 class="about__title title">About me</h2>
-            <div class="about__wrapper about__wrapper--white">
+            <h2 class="about__title title js-about-title">About me</h2>
+            <div class="about__wrapper about__wrapper--white js-about-content">
               <div class="about__img">
                 <img src="img/elia.jpg" alt="">
               </div>
@@ -196,7 +255,7 @@
               </div>
             </div>
             <div class="about__wrapper">
-              <div class="about__col">
+              <div class="about__col js-about-erfolg-left">
                 <h3 class="about__subtitle">Awards</h3>
                 <ul class="about__list">
                   <li>2018 - finalist of International Artist Grand Prize Competition, Art Revolution Taipei, Taiwan</li>
@@ -204,7 +263,7 @@
                   <li>2020 – One of the excellent finalists of International Artist Grand Prize Competition (Gallery award), Taipei, Taiwan</li>
                 </ul>
               </div>
-              <div class="about__col">
+              <div class="about__col js-about-erfolg-right">
                 <h3 class="about__subtitle">Selected exhibitions</h3>
                 <ul class="about__list">
                   <li>2016 – Group exhibition “200 artworks in one place”, Lemo art gallery, Berlin, Germany</li>
@@ -220,35 +279,125 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <h2 class="gallery__title title">Gallery</h2>
-        <div class="gallery__slider js-slider">
-          <div class="slider__item">
-            <div class="slide">
-              <img src="img/hero1.jpg" alt="">
+        <div class="slider">
+          <div class="gallery__slider js-slider">
+            <div class="slider__item">
+              <div class="slide">
+                <img src="img/hero1.jpg" alt="">
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slide">
+                <img src="img/hero2.jpg" alt="">
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slide">
+                <img src="img/hero3.jpg" alt="">
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slide">
+                <img src="img/hero4.jpg" alt="">
+              </div>
             </div>
           </div>
-          <div class="slider__item">
-            <div class="slide">
-              <img src="img/hero2.jpg" alt="">
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="slide">
-              <img src="img/hero3.jpg" alt="">
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="slide">
-              <img src="img/hero4.jpg" alt="">
-            </div>
-          </div>
+          <button class="js-slider-next slider__btn slider__btn--next">
+            <svg class="icon icon-arrow">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="js-slider-prev slider__btn slider__btn--prev">
+            <svg class="icon icon-arrow">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="insta">
-        <p>"As an artist, I perceive art as a space of absolute freedom to express myself. In each painting I strive to embody a surreal fantasy world where reality and imagination become a natural extension of each other.</p>
-        <p>In this space without the laws of logic and physics it becomes possible to realize any ideas, even the most incredible ones, through amusing and bizarre forms and symbols.</p>
-        <p>Awaken your imagination and become a wizard for a while! Follow me into this “rabbit hole” to figure out how far imagination can lead us."</p>
+        <h2 class="insta__title title">My Instagram</h2>
+        <div class="insta__in">
+          <div class="insta__imgs">
+            <a href="https://www.instagram.com/p/B9uF0YGnADM/" class="insta__img" target="_blank">
+              <img src="img/insta1.jpg" alt="">
+            </a>
+            <a href="https://www.instagram.com/p/B-PydSOHZ8B/" class="insta__img" target="_blank">
+              <img src="img/insta2.jpg" alt="">
+            </a>
+            <a href="https://www.instagram.com/p/CA0jtQwH3lM/" class="insta__img" target="_blank">
+              <img src="img/insta3.jpg" alt="">
+            </a>
+          </div>
+          <div class="insta__text">
+            <p>"As an artist, I perceive art as a space of absolute freedom to express myself. In each painting I strive to embody a surreal fantasy world where reality and imagination become a natural extension of each other.</p>
+            <p>In this space without the laws of logic and physics it becomes possible to realize any ideas, even the most incredible ones, through amusing and bizarre forms and symbols.</p>
+            <p>Awaken your imagination and become a wizard for a while! Follow me into this “rabbit hole” to figure out how far imagination can lead us."</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__title title">Contact me</h2>
+        <div class="container">
+          <div class="contact__in">
+            <div class="contact__photo">
+              <img src="img/elia2.jpg" alt="">
+            </div>
+            <div class="contact__col">
+              <p class="contact__name">Emiliia Lynnyk</p>
+              <div class="contact__inner">
+                <div class="contact__wrap">
+                  <p class="contact__subtitle">My studio</p>
+                  <p class="contact__location"><svg viewBox="0 0 60 60">
+                      <g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1">
+                        <g id="location">
+                          <path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#009fe8" />
+                          <path d="M17.3076923,25.3846154 C17.3076923,31.7576923 28.8461538,46.6631611 28.8461538,46.2583571 C28.8461538,45.8535532 40.3846154,31.7576923 40.3846154,25.3846154 C40.3846154,19.0115385 35.2153846,13.8461538 28.8461538,13.8461538 C22.4769231,13.8461538 17.3076923,19.0115385 17.3076923,25.3846154 Z M23.0769231,24.2307692 C23.0769231,27.4173077 25.6615385,30 28.8461538,30 C32.0307692,30 34.6153846,27.4173077 34.6153846,24.2307692 C34.6153846,21.0442308 32.0307692,18.4615385 28.8461538,18.4615385 C25.6615385,18.4615385 23.0769231,21.0442308 23.0769231,24.2307692 Z" fill="#FFFFFF" />
+                        </g>
+                      </g>
+                    </svg>Solomianska str. 3, Kyiv, Ukraine</p>
+                </div>
+                <div class="contact__wrap">
+                  <p class="contact__subtitle">My phone</p>
+                  <a href="tel:+380924874363" class="contact__phone"><svg id="Layer_1" version="1.1" viewBox="0 0 32 32">
+                      <g id="Style_2_copy_3">
+                        <g>
+                          <g>
+                            <path d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0z" fill="#49a454" />
+                          </g>
+                        </g>
+                      </g>
+                      <g id="style_4_1_">
+                        <g>
+                          <rect fill="#FFFFFF" height="5.88" transform="matrix(0.7879 -0.6158 0.6158 0.7879 -7.8032 18.2727)" width="2.4" x="21.425" y="17.524" />
+                          <path d="M22.513,24.284l-3.621-4.633c0,0-2.361-0.553-4.043-2.704c-1.681-2.151-1.647-4.576-1.647-4.576    L9.581,7.738c0,0-3.431,4.915,1.951,11.801S22.513,24.284,22.513,24.284z" fill="#FFFFFF" />
+                          <rect fill="#FFFFFF" height="5.88" transform="matrix(0.7879 -0.6158 0.6158 0.7879 -2.4429 10.012)" width="2.4" x="12.113" y="5.612" />
+                        </g>
+                      </g>
+                    </svg>+38 092 487 43 63</a>
+                </div>
+              </div>
+              <form class="contact__form">
+                <div class="contact__inner">
+                  <label for="name">
+                    <span>Name</span>
+                    <input type="text" name="name" id="name">
+                  </label>
+                  <label for="email">
+                    <span>Email</span>
+                    <input type="email" name="email" id="email">
+                  </label>
+                </div>
+                <label for="message">
+                  <span>Message</span>
+                  <textarea name="message" id="message"></textarea>
+                </label>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!-- END content -->

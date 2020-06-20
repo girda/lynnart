@@ -1,5 +1,5 @@
 ---
-title: Index page
+title: Lynnart
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -12,8 +12,8 @@ title: Index page
         <div class="hero__in">
             <div class="hero__overlay"></div>
             <h2 class="hero__title">
-                <span>«I  Dream  my  paint,  and  then i paint  my  dream.»</span> 
-                <span>Vincent van gogh<span>
+                <span class="js-title">«I  Dream  my  paint,  and  then i paint  my  dream.»</span> 
+                <span class="js-autor">Vincent van gogh<span>
             </h2>
             <div class="hero__img">
                 <img src="img/hero1.jpg" alt="">
@@ -21,15 +21,42 @@ title: Index page
             
         </div>
     </section>
+        
+    {% set items = [
+        {mod: 1, deep: 100, size: 50, url: 'cloud1'},
+        {mod: 2, deep: 80, size: 60, url: 'cloud1'},
+        {mod: 3, deep: 60, size: 70, url: 'cloud'},
+        {mod: 4, deep: 40, size: 80, url: 'cloud'},
+        {mod: 5, deep: 35, size: 150, url: 'cloud1'},
+        {mod: 6, deep: 35, size: 170, url: 'cloud1'},
+        {mod: 7, deep: 30, size: 190, url: 'cloud1'},
+        {mod: 8, deep: 30, size: 240, url: 'cloud'},
+        {mod: 9, deep: 35, size: 90, url: 'cloud1'},
+        {mod: 11, deep: 180, size: 590, url: 'birds1'},
+        {mod: 12, deep: 80, size: 590, url: 'birds2'},
+        {mod: 13, deep: 80, size: 590, url: 'birds1'},
+        {mod: 14, deep: 60, size: 590, url: 'birds2'}
+    ]%}
 
+    {% for item in items %}
+        <div 
+            class="cloud--{{ item.mod }} cloud" 
+            data-parallax-deep="{{ item.deep }}" 
+            style="width: {{item.size}}px; height: {{item.size * 0.65}}px"
+        >
+            <img src="img/{{item.url}}.png" alt="" style="width: {{item.size}}px;">
+            <!-- {% include "icons/_cloud.html" %} -->
+        </div>
+    {% endfor %}
+    
     
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__in">
-                <h2 class="about__title title">About me</h2>
+                <h2 class="about__title title js-about-title">About me</h2>
 
-                <div class="about__wrapper about__wrapper--white">
+                <div class="about__wrapper about__wrapper--white js-about-content">
 
                     <div class="about__img">
                         <img src="img/elia.jpg" alt="">
@@ -49,7 +76,7 @@ title: Index page
                 <div class="about__wrapper">
                     
                     
-                    <div class="about__col">
+                    <div class="about__col js-about-erfolg-left">
                         <h3 class="about__subtitle">Awards</h3>
 
                         <ul class="about__list">
@@ -59,7 +86,7 @@ title: Index page
                         </ul>
                     </div>
 
-                    <div class="about__col">
+                    <div class="about__col js-about-erfolg-right">
                       <h3 class="about__subtitle">Selected exhibitions</h3>
 
                         <ul class="about__list">
@@ -79,43 +106,131 @@ title: Index page
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2 class="gallery__title title">Gallery</h2>
 
-        <div class="gallery__slider js-slider">
-            <div class="slider__item">
-                <div class="slide">
-                    <img src="img/hero1.jpg" alt="">
+        
+        <div class="slider">
+            <div class="gallery__slider js-slider">
+                <div class="slider__item">
+                    <div class="slide">
+                        <img src="img/hero1.jpg" alt="">
+                    </div>
+                    
                 </div>
+                <div class="slider__item">
+                     <div class="slide">
+                        <img src="img/hero2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider__item">
+                     <div class="slide">
+                        <img src="img/hero3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider__item">
+                     <div class="slide">
+                        <img src="img/hero4.jpg" alt="">
+                    </div>
+                </div>
+
                 
             </div>
-            <div class="slider__item">
-                 <div class="slide">
-                    <img src="img/hero2.jpg" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                 <div class="slide">
-                    <img src="img/hero3.jpg" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                 <div class="slide">
-                    <img src="img/hero4.jpg" alt="">
-                </div>
-            </div>
+
+            <button class="js-slider-next slider__btn slider__btn--next">{{mixins.icon('arrow')}}</button>
+            <button class="js-slider-prev slider__btn slider__btn--prev">{{mixins.icon('arrow')}}</button>
         </div>
+        
     </section>
 
     <section class="insta">
-        <p>"As an artist, I perceive art as a space of absolute freedom to express myself. In each painting I strive to embody a surreal fantasy world where reality and imagination become a natural extension of each other.</p>
 
-                    <p>In this space without the laws of logic and physics it becomes possible to realize any ideas, even the most incredible ones, through amusing and bizarre forms and symbols.</p>
+        <h2 class="insta__title title">My Instagram</h2>
 
-                    <p>Awaken your imagination and become a wizard for a while! Follow me into this “rabbit hole” to figure out how far imagination can lead us."</p>
+        <div class="insta__in">
+            <div class="insta__imgs">
+
+                <a href="https://www.instagram.com/p/B9uF0YGnADM/" class="insta__img" target="_blank">
+                    <img src="img/insta1.jpg" alt="">
+                </a>
+
+                <a href="https://www.instagram.com/p/B-PydSOHZ8B/" class="insta__img" target="_blank">
+                    <img src="img/insta2.jpg" alt="">
+                </a>
+
+                <a href="https://www.instagram.com/p/CA0jtQwH3lM/" class="insta__img" target="_blank">
+                    <img src="img/insta3.jpg" alt="">
+                </a>
+
+            </div>
+
+            <div class="insta__text">
+                <p>"As an artist, I perceive art as a space of absolute freedom to express myself. In each painting I strive to embody a surreal fantasy world where reality and imagination become a natural extension of each other.</p>
+
+                <p>In this space without the laws of logic and physics it becomes possible to realize any ideas, even the most incredible ones, through amusing and bizarre forms and symbols.</p>
+
+                <p>Awaken your imagination and become a wizard for a while! Follow me into this “rabbit hole” to figure out how far imagination can lead us."</p>
+            </div>
+        </div>
+        
     </section>
 
 
-    
+    <section class="contact" id="contact">
+        <h2 class="contact__title title">Contact me</h2>
+
+        <div class="container">
+            <div class="contact__in">
+
+                <div class="contact__photo">
+                    <img src="img/elia2.jpg" alt="">
+                </div>
+
+                <div class="contact__col">
+                    <p class="contact__name">Emiliia Lynnyk</p>
+                        
+                    <div class="contact__inner">    
+                        <div class="contact__wrap"> 
+                            <p class="contact__subtitle">My studio</p>
+                            <p class="contact__location">{% include "icons/_location.html" %}Solomianska str. 3, Kyiv, Ukraine</p>
+                        </div>
+                        <div class="contact__wrap"> 
+                            <p class="contact__subtitle">My phone</p>
+                            <a href="tel:+380924874363" class="contact__phone">{% include "icons/_phone.html" %}+38 092 487 43 63</a>
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+
+                    <form class="contact__form">
+                        <div class="contact__inner">    
+                            <label for="name">
+                                <span>Name</span>
+                                <input type="text" name="name" id="name">
+                            </label>
+                            
+                            <label for="email">
+                                <span>Email</span>
+                                <input type="email" name="email" id="email">
+                             </label>
+                        </div>
+                        
+                        
+                        <label for="message">
+                            <span>Message</span>
+                            <textarea name="message" id="message"></textarea>
+                        </label>
+
+                        <button type="submit" class="btn">Submit</button>
+                        
+                    </form>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 {% endblock %}

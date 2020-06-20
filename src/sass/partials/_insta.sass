@@ -1,0 +1,65 @@
+.insta
+
+    &__in
+        display: flex
+        
+    &__imgs
+        display: flex
+        margin-left: 100px
+        
+    &__img
+        display: flex
+        width: 300px
+        height: 500px
+        margin-right: 20px
+        // padding: 10px
+        background-color: #FFF 
+        border-radius: 5px 
+        box-shadow: 0 2px 10px -5px #000000
+        overflow: hidden
+        z-index: 1
+        &:last-child
+            margin-right: 0
+        
+        img
+            width: 100%
+            object-fit: cover
+            animation-name: example
+            animation-duration: 40s
+            animation-iteration-count: infinite
+            
+        &:hover
+            img
+                
+                
+            
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        min-height: 500px
+        min-width: 700px 
+        
+        margin-left: -100px
+        margin-right: 200px
+        margin-top: 100px
+        
+        padding: 40px
+        padding-left: 140px
+        
+        font-family: 'Architects Daughter', cursive
+        font-size: 20px
+        
+        background-color: #FFF
+        border-radius: 5px 
+        box-shadow: 0 2px 10px -5px #000000
+        p
+            margin-bottom: 20px
+        
+@keyframes example
+    0%   
+        transform: scale(1.2)
+    50%   
+        transform: scale(1)
+    100%   
+        transform: scale(1.2)

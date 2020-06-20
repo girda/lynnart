@@ -1,20 +1,64 @@
 .slider
-
+	position: relative
 	
+	&__btn
+		position: absolute
+		top: 50%
+		left: 50px
+		transform: translateY(-50%)
+		
+		display: flex
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		padding: 20px
+		overflow: hidden
+		border-radius: 50% 
+		width: 100px
+		height: 100px
+		background-color: rgba(0, 0, 0, 0.3) 
+
+		transition: all 0.4s ease
+		
+		&--next
+			left: auto
+			right: 50px
+			
+		&--prev
+			transform: translateY(-50%) rotate(180deg)
+		
+		svg
+			font-size: 45px
+			fill: #87bee7
+			transition: all 0.4s ease
+
+				
+		&:hover
+			background-color: rgba(#ef87ee, 0.6)
+			
+			svg
+				fill: #0398cf
 
 
 .slide
 	opacity: 0.5
 	height: 600px
 	display: flex
-	margin: 30px
+	margin: 40px
 	transition: all 0.4s ease
 
 	img
 		width: 100%
 		object-fit: cover
-		object-position: top center
+		object-position: top center		
+		margin: 10px
+		border-radius: 5px 
+		box-shadow: 0 2px 10px -5px #000000
 
 .slick-center .slide
 		opacity: 1
 		transform: scale(1.2)
+
+
+
