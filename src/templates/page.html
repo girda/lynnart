@@ -5,20 +5,37 @@ title: Lynnart
 
 {% block content %}
 
+    <div class="preloader-bg js-preloader-bg"></div>
+    <div class="preloader js-preloader"></div>
+<div class="texture js-texture"></div>
+<!--     <div class="preloader-1"></div>
+    <div class="preloader-2"></div> -->
+
 	{% include "partials/_header.html" %}
 
 
     <section class="hero">
         <div class="hero__in">
-            <div class="hero__overlay"></div>
+            
             <h2 class="hero__title">
                 <span class="js-title">«I  Dream  my  paint,  and  then i paint  my  dream.»</span> 
                 <span class="js-autor">Vincent van gogh<span>
             </h2>
-            <div class="hero__img">
-                <img src="img/hero1.jpg" alt="">
+            
+            <div class="hero__imgs">
+                <div class="hero__img hero__img--left js-hero-bg-left">
+                    <div class="hero__overlay"></div>
+                    <img src="img/hero1.jpg" alt="">
+                </div>
+                <div class="hero__img hero__img--right js-hero-bg-right">
+                    <div class="hero__overlay"></div>
+                    <img src="img/hero1.jpg" alt="">
+                </div>
+                <div class="hero__imgs-bg js-hero-bg"></div>
+                <div class="hero__overlay hero__overlay--large js-hero-overlay"></div>
             </div>
             
+            <button type="button" class="hero__arrow js-hero-arrow">{{mixins.icon('arrow')}}</button>
         </div>
     </section>
         

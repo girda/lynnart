@@ -39,6 +39,7 @@ function Parallax(options) {
                 itemX = (disallow && disallow === 'x') ? 0 : x / deep,
                 itemY = (disallow && disallow === 'y') ? 0 : y / deep;
               if(disallow && disallow === 'both') return;
+              
               layers[j].style.transform = 'translateX(' + itemX + '%) translateY(' + itemY + '%)';
             })(j);  
           }
