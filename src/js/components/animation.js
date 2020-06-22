@@ -37,14 +37,14 @@ const $heroArrow = $('.js-hero-arrow');
 
 tlHero
   .add(tlPreloader)
-  .from($heroBgRight, {x: '100%', skewY: '-90deg', skewX: '-180deg', duration: 2}, -0.1)
-  .from($heroBgLeft, {x: '-100%', skewY: '90deg', skewX: '180deg', duration: 2, delay: -2})
+  .from($heroBgRight, {x: '100%', duration: 2}, -0.1)
+  .from($heroBgLeft, {x: '-100%', duration: 2, delay: -2})
 
   .from($heroBg, {opacity: 0, duration: 1})
   .from($heroOverlay, {opacity: 0, duration: 1, delay: -1})
 
-  .fromTo($heroBgRight, {opacity: 1}, {opacity: 0}, 2.1)
-  .fromTo($heroBgLeft, {opacity: 1}, {opacity: 0}, 2.1)
+  .fromTo($heroBgRight, {opacity: 0.8}, {opacity: 0}, 2.1)
+  .fromTo($heroBgLeft, {opacity: 0.8}, {opacity: 0}, 2.1)
   .from($logo, {marginLeft: -1000, duration: 2, delay: -1.5})
   .from($title, {marginLeft: -2000, opacity: 1, duration: 3, delay: -1.5})
   .from($autor, {y: 200, opacity: 0, duration: 2, delay: -1.5})
@@ -72,9 +72,16 @@ const $slider = $('.js-slider');
 const $sliderNext = $('.js-slider-next');
 const $sliderPrev = $('.js-slider-prev');
 tlSlider
-  .from($slider, {y: 250, opacity: 0, duration: 2});
-// .from($sliderNext, {x: 650, opacity: 0, duration: 4, delay: -1.9})
-// .from($sliderPrev, {x: -650, opacity: 0, duration: 4, delay: -3.9});
+  .from($slider, {y: 250, opacity: 0, duration: 2})
+  .from($sliderPrev, {left: -500, opacity: 1, duration: 1}, '-=2')
+  .from($sliderNext, {right: -500, opacity: 1, duration: 1}, '-=2');
+
+const tlInsta  = new TimelineMax();
+const $instaImg = $('.js-insta-img');
+const $instaText = $('.js-insta-text');
+tlInsta
+  .fromTo($instaImg, {marginLeft: -1000}, {marginLeft: 20, stagger: 0.5, duration: 2})
+  .from($instaText, {x: 2000, duration: 2, delay: -1.5});
 
 export default function animation() {
 
@@ -97,10 +104,18 @@ export default function animation() {
     reverse: false
   }).setTween(tlSlider);
     
+
+  const sceneInsta = new ScrollMagic.Scene({
+    triggerElement: '.insta',
+    triggerHook: 1,
+    reverse: false
+  }).setTween(tlInsta);
+
   controller.addScene([
     sceneHero,
     sceneAbout,
-    sceneSlider
+    sceneSlider,
+    sceneInsta
   ]);
 
 }

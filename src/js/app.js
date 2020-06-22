@@ -57,3 +57,10 @@ function Parallax(options) {
 window.addEventListener('load', function() {
   new Parallax();
 });
+
+$('.js-hero-arrow').click(function(e) {
+  $('html, body').animate({
+    scrollTop: $('#about').offset().top
+  }, 2000);
+});
+
