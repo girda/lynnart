@@ -7,9 +7,7 @@ title: Lynnart
 
     <div class="preloader-bg js-preloader-bg"></div>
     <div class="preloader js-preloader"></div>
-<div class="texture js-texture"></div>
-<!--     <div class="preloader-1"></div>
-    <div class="preloader-2"></div> -->
+
 
 	{% include "partials/_header.html" %}
 
@@ -130,25 +128,33 @@ title: Lynnart
         <div class="slider">
             <div class="gallery__slider js-slider">
                 <div class="slider__item">
-                    <div class="slide">
-                        <img src="img/hero1.jpg" alt="">
-                    </div>
+
+                        <a href="img/hero1.jpg" class="fancybox slide" title="Sample title 1">
+                            <img src="img/hero1.jpg" alt="">
+                        </a>
+
                     
                 </div>
                 <div class="slider__item">
-                     <div class="slide">
-                        <img src="img/hero2.jpg" alt="">
-                    </div>
+
+                        <a href="img/hero2.jpg" class="fancybox slide" title="Sample title 1">
+                            <img src="img/hero2.jpg" alt="">
+                        </a>
+
                 </div>
                 <div class="slider__item">
-                     <div class="slide">
-                        <img src="img/hero3.jpg" alt="">
-                    </div>
+
+                       <a href="img/hero3.jpg" class="fancybox slide" title="Sample title 1">
+                            <img src="img/hero3.jpg" alt="">
+                        </a>
+           
                 </div>
                 <div class="slider__item">
-                     <div class="slide">
-                        <img src="img/hero4.jpg" alt="">
-                    </div>
+            
+                        <a href="img/hero4.jpg" class="fancybox slide" title="Sample title 1">
+                            <img src="img/hero4.jpg" alt="">
+                        </a>
+          
                 </div>
 
                 
@@ -249,5 +255,24 @@ title: Lynnart
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+           <div class="footer__in">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a class="js-nav-link" href="#about">About</a></li>
+                        <li><a class="js-nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
+                </nav>
+                <ul class="socials">
+                    
+                    <li><a href="#">{{ mixins.icon('fb') }}</a></li>
+                    <li><a href="#">{% include "icons/_pint.html" %}</a></li>
+                    <li><a href="#">{% include "icons/_insta.html" %}</a></li>
+                </ul>
+            </div> 
+        </div>
+    </footer>
 
 {% endblock %}

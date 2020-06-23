@@ -1,6 +1,6 @@
 import 'slick-carousel';
+import '@fancyapps/fancybox';
 import animation from './components/animation.js';
-
 animation();
 $('.js-slider').slick({
   centerMode: true,
@@ -9,7 +9,14 @@ $('.js-slider').slick({
   nextArrow: '.js-slider-next',
   prevArrow: '.js-slider-prev'
 });
-
+$.fancybox.defaults.fullScreen = true;
+$().fancybox({
+  selector : '.js-slider .slick-slide:not(.slick-cloned) a',
+  loop: true
+  // fullScreen : {
+  //   autoStart: true
+  // }
+});
 
 function Parallax(options) {
 
@@ -64,3 +71,8 @@ $('.js-hero-arrow').click(function(e) {
   }, 2000);
 });
 
+$('.nav a').click(function(e) {
+  $('html, body').animate({
+    scrollTop: $($(e.target).attr('href')).offset().top
+  }, 2000);
+});

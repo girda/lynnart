@@ -1,5 +1,5 @@
 import ScrollMagic from 'scrollmagic';
-import { TimelineMax, TweenMax, gsap} from 'gsap';
+import { TimelineMax, TweenMax, gsap } from 'gsap';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 
 
@@ -14,7 +14,6 @@ const triggerHook = 0.7;
 const tlPreloader = gsap.timeline();
 const $preloaderBg = $('.js-preloader-bg');
 const $preloader = $('.js-preloader');
-const $texture = $('.js-texture');
 
 
 tlPreloader
@@ -83,6 +82,16 @@ tlInsta
   .fromTo($instaImg, {marginLeft: -1000}, {marginLeft: 20, stagger: 0.5, duration: 2})
   .from($instaText, {x: 2000, duration: 2, delay: -1.5});
 
+
+const tlContact  = new TimelineMax();
+const $contactImg = $('.contact__photo');
+const $contactText = $('.contact__col');
+const $contactIn = $('.contact__in');
+tlContact
+  .from($contactIn, {y: 2000, duration: 2})
+  .from($contactImg, {x: -800, duration: 2, delay: -1})
+  .from($contactText, {y: 200, opacity: 0, duration: 2, delay: -1.5});
+
 export default function animation() {
 
 
@@ -111,11 +120,18 @@ export default function animation() {
     reverse: false
   }).setTween(tlInsta);
 
+  const sceneContact = new ScrollMagic.Scene({
+    triggerElement: '.contact',
+    triggerHook: 1,
+    reverse: false
+  }).setTween(tlContact);
+
   controller.addScene([
     sceneHero,
     sceneAbout,
     sceneSlider,
-    sceneInsta
+    sceneInsta,
+    sceneContact
   ]);
 
 }

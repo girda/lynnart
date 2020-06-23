@@ -1,6 +1,6 @@
 .contact
 
-    margin-bottom: 80px
+    margin-bottom: 220px
     font-family: 'Julius Sans One', sans-serif
 
     &__in
@@ -101,6 +101,7 @@
             margin-bottom: 20px 
             
         button.btn
+            position: relative
             margin-left: auto 
             padding: 15px 30px
             font-size: 20px
@@ -109,3 +110,22 @@
             background-color: rgb(0, 159, 232)
             border-radius: 5px
             color: white
+            overflow: hidden
+            &:after 
+                background: #fff
+                content: ''
+                height: 155px
+                left: -75px
+                opacity: .2
+                position: absolute
+                top: -50px
+                transform: rotate(35deg)
+                transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+                width: 50px
+              
+            &:hover 
+                color: gold
+                &:after 
+                    left: 120%
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+                  
