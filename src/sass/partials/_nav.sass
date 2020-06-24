@@ -1,0 +1,35 @@
+.nav
+    margin-left: auto
+    &__list
+        display: flex
+        
+        li
+            display: flex
+            margin-right: 80px
+            
+        a
+            position: relative
+            font-family: 'Julius Sans One', sans-serif
+            font-size: 14px
+            font-weight: 700 
+            letter-spacing: 2px
+            color: white
+            text-decoration: none
+            margin-top: -80px
+            opacity: 0
+            overflow: hidden
+            &:before 
+                content: ''
+                position: absolute
+                transition: transform .5s ease
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 2px
+                background-color: gold
+                transform: translateX(-110%)
+              
+            &:hover
+                color: gold
+                &:before 
+                    transform: translateX(0)

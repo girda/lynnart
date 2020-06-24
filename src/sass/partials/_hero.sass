@@ -73,7 +73,7 @@
 		transform: translate(-50%, -50%)
 		display: flex
 		flex-direction: column
-		width: 1240px
+		white-space: nowrap
 		font-size: 56px
 		font-family: 'Architects Daughter', cursive
 		font-weight: 400
@@ -81,11 +81,16 @@
 		z-index: 2
 
 		span:last-child
-			margin-left: auto
-			margin-right: 30px
-			margin-top: 20px
+			position: absolute
+			bottom: -50px
+			right: 0
 			font-size: 22px
 			opacity: 1
+			
+		+r(1440)
+			font-size: 42px
+			text-align: center
+
 
 
 	&__overlay

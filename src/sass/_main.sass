@@ -15,6 +15,13 @@ body
 .container
     width: 1240px
     margin: 0 auto
+    
+    +r(1440)
+        width: 1080px
+        
+    +r(1200)
+        width: 100%
+        padding: 0 30px
 
 .title
     font-family: 'Julius Sans One', sans-serif
@@ -22,6 +29,9 @@ body
     text-align: center
     margin-bottom: 40px
     padding-top: 80px
+    
+    +r(1440)
+        font-size: 36px
 
 .logo h1
     font-family: 'Julius Sans One', sans-serif
@@ -45,41 +55,7 @@ body
 .icon-fb:hover
     fill: #0f92f3
     
-.nav
-    margin-left: auto
-    &__list
-        display: flex
-        
-        li
-            display: flex
-            margin-right: 80px
-            
-        a
-            position: relative
-            font-family: 'Julius Sans One', sans-serif
-            font-size: 14px
-            font-weight: 700 
-            letter-spacing: 2px
-            color: white
-            text-decoration: none
-            margin-top: -80px
-            opacity: 0
-            overflow: hidden
-            &:before 
-                content: ''
-                position: absolute
-                transition: transform .5s ease
-                left: 0
-                bottom: 0
-                width: 100%
-                height: 2px
-                background-color: gold
-                transform: translateX(-110%)
-              
-            &:hover
-                color: gold
-                &:before 
-                    transform: translateX(0)
+
               
     
 .socials 
@@ -90,7 +66,7 @@ body
         margin-right: 0
         margin-top: -80px
         &:last-child
-            margin-right: 0
+            margin-right: 0!important
         a
             display: flex
     svg
