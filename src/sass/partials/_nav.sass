@@ -1,7 +1,8 @@
 .nav
-    margin-left: auto
+    display: flex
     &__list
         display: flex
+        align-items: center
         
         li
             display: flex
@@ -33,3 +34,12 @@
                 color: gold
                 &:before 
                     transform: translateX(0)
+        +r(1024)
+            flex-direction: column
+            margin: 100px auto 0
+            a 
+                font-size: 20px
+
+            li 
+                margin-bottom: 30px
+                margin-right: 0

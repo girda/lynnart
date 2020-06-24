@@ -1,5 +1,6 @@
 .about
 
+	
 	&__wrapper
 		display: flex
 		margin-bottom: 40px
@@ -8,10 +9,13 @@
 			background-color: #fff
 			border-radius: 5px
 			box-shadow: 0px 2px 10px -5px #000000
+				
 
 	&__text p
 		margin-bottom: 20px
 		font-size: 18px
+		// &:last-child
+		// 	margin-bottom: 0
 
 	&__img
 		display: flex
@@ -41,3 +45,35 @@
 
 		li 
 			margin-bottom: 10px
+
+	+r(1200)
+		background-color: #fff
+		padding-bottom: 30px
+		&__wrapper
+			margin-bottom: 30px
+			flex-direction: column-reverse
+			&:last-child
+				margin-bottom: 0
+		&__wrapper--white, &__col
+			background-color: transparent
+			box-shadow: none
+			border-radius: none
+			padding: 0
+		&__subtitle
+			font-size: 26px
+
+		&__img
+			margin-right: 0
+			box-shadow: none
+			justify-content: center
+
+		&__list
+			margin-bottom: 30px
+
+		&__col
+			margin-right: 0
+
+
+	+r(768)
+		&__text p
+			font-size: 16px

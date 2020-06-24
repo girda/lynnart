@@ -40,7 +40,21 @@
 			svg
 				fill: gold
 
+	+r(1200)
+		padding-bottom: 60px
 
+		&__btn
+			left: 30px
+			width: 60px
+			height: 60px
+			padding: 10px
+			&--next
+				left: auto
+				right: 30px
+
+	+r(768)
+		&__btn
+			display: none!important
 .slide
 	opacity: 0.5
 	height: 600px
@@ -57,10 +71,22 @@
 		border-radius: 5px 
 		box-shadow: 0 2px 10px -5px #000000
 
+	+r(1440)
+		height: 500px
+	+r(1200)
+		height: 400px
+
+	+r(1024)
+		img
+			margin: 0
+
 .slick-center .slide
-		opacity: 1
-		transform: scale(1.2)
-		pointer-events: auto
+	opacity: 1
+	transform: scale(1.2)
+	pointer-events: auto
+
+
+
 
 
 

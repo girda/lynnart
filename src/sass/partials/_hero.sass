@@ -26,6 +26,8 @@
 		// display: none
 		&.is-show
 			display: block
+
+
 	
 	&__img	
 		display: flex
@@ -131,7 +133,23 @@
 				fill: gold
 				transform: scale(1.2)
 
-			
+	+r(1380)
+		&__imgs-bg
+			background-size: 1700px		
+
+	+r(960)
+		&__title
+			width: 100%
+			padding: 0 30px
+			white-space: initial
+			font-size: 32px
+			span:last-child
+				right: 50px
+				font-size: 18px
+
+	+r(600)
+		&__arrow
+			left: 54%
 
 @keyframes arrow
 	0%   
