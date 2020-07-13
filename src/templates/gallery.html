@@ -1,0 +1,128 @@
+---
+title: Lynnart
+bodyClass: gallery
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    <div class="preloader-bg js-preloader-bg"></div>
+    <div class="preloader js-preloader"></div>
+
+
+	{% include "partials/_header.html" %}
+    
+    <div class="full-gallery">
+        <div class="full-gallery__title title">Gallery</div>
+        <div class="container">
+           <div class="full-gallery__in">
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+
+                <div class="full-gallery__item">
+                    <div class="picture">
+                        <div class="picture__media">
+                            <img src="img/hero1.jpg" alt="">
+                        </div>
+
+                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
+                        <div class="picture__text">oil on canvas 80x70cm</div>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+           <div class="footer__in">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a class="js-nav-link" href="#about">About</a></li>
+                        <li><a class="js-nav-link" href="#gallery">Gallery</a></li>
+                    </ul>
+                </nav>
+                <ul class="socials">
+                    
+                    <li><a href="#">{{ mixins.icon('fb') }}</a></li>
+                    <li><a href="#">{% include "icons/_pint.html" %}</a></li>
+                    <li><a href="#">{% include "icons/_insta.html" %}</a></li>
+                </ul>
+            </div> 
+        </div>
+    </footer>
+
+{% endblock %}
