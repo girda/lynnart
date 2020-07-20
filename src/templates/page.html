@@ -120,49 +120,37 @@ title: Lynnart
             </div>
         </div>
     </section>
-
+{% set slides = [
+        {imgSrc: 'hero1.jpg', name: 'Addicted with fairytales', size: ' 80x70cm', technology: 'oil on canvas'},
+        {imgSrc: 'hero2.jpg', name: 'Addicted with fairytales', size: ' 80x70cm', technology: 'oil on canvas'},
+        {imgSrc: 'hero3.jpg', name: 'Addicted with fairytales', size: ' 80x70cm', technology: 'oil on canvas'},
+        {imgSrc: 'hero4.jpg', name: 'Addicted with fairytales', size: ' 80x70cm', technology: 'oil on canvas'}
+    ]%}
     <section class="gallery" id="gallery">
         <h2 class="gallery__title title">Gallery</h2>
 
         
         <div class="slider">
             <div class="gallery__slider js-slider">
+                {% for slide in slides %}
                 <div class="slider__item">
-
-                        <a href="img/hero1.jpg" class="fancybox slide" data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
-                            <img src="img/hero1.jpg" alt="">
-                        </a>
-
-                    
+                    <a href="img/{{ slide.imgSrc }}" class="fancybox slide" data-caption="&lt;b&gt;{{ slide.name }}&lt;/b&gt;&lt;br /&gt;{{ slide.technology }} {{ slide.size }}">
+                        <img src="img/{{ slide.imgSrc }}" alt="">
+                        <p class="slide__descr">
+                            <span>{{ slide.name }}</span>
+                            <span>{{ slide.technology }} {{ slide.size }}</span>
+                        </p>
+                    </a>
                 </div>
-                <div class="slider__item">
-
-                        <a href="img/hero2.jpg" class="fancybox slide"  data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
-                            <img src="img/hero2.jpg" alt="">
-                        </a>
-
-                </div>
-                <div class="slider__item">
-
-                       <a href="img/hero3.jpg" class="fancybox slide"  data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
-                            <img src="img/hero3.jpg" alt="">
-                        </a>
-           
-                </div>
-                <div class="slider__item">
-            
-                        <a href="img/hero4.jpg" class="fancybox slide"  data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br&gt;Caption can contain any HTML elements">
-                            <img src="img/hero4.jpg" alt="">
-                        </a>
-          
-                </div>
-
+                {% endfor %}
                 
             </div>
 
             <button class="js-slider-next slider__btn slider__btn--next">{{mixins.icon('arrow')}}</button>
             <button class="js-slider-prev slider__btn slider__btn--prev">{{mixins.icon('arrow')}}</button>
         </div>
+
+        <a href="./gallery.html" class="gallery__link btn">Full gallery</a>
         
     </section>
 

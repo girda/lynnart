@@ -3,3 +3,7 @@ ProjectTitle: lynnart
 PageList:
 - file: page.html
   ready: 50
+- file: gallery.html
+  ready: 50
+- file: latest-news.html
+  ready: 50

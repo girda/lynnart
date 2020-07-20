@@ -17,10 +17,31 @@ body
 
     &.gallery
         min-height: 100vh
+        
+        .header
+            .logo h1
+                color: #4c4c4c
+
+            .nav a 
+                color: #4c4c4c
+                &:before
+                    background-color: #4c4c4c
+
+            .icon-insta, .icon-fb, .icon-pint
+                fill: #707070
+            .icon-insta:hover
+                fill: url(#SVGID_1_)
+                
+            .icon-pint:hover
+                fill: #ca2127
+                
+            .icon-fb:hover
+                fill: #0f92f3
 
     +r(768)
         
         font-size: 16px
+
     
 .out
     position: relative

@@ -56,6 +56,14 @@ $().fancybox({
   // }
 });
 
+$().fancybox({
+  selector : '.picture',
+  loop: true
+  // fullScreen : {
+  //   autoStart: true
+  // }
+});
+
 function Parallax(options) {
 
   options = options || {};

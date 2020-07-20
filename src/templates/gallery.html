@@ -1,6 +1,68 @@
 ---
 title: Lynnart
 bodyClass: gallery
+gallery: [
+    {
+        srcImg: hero1.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero2.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero3.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero4.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero1.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero2.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero3.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero4.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero1.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero2.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero3.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    },
+    {
+        srcImg: hero4.jpg,
+        name: 'Addicted with fairytales',
+        descr: 'oil on canvas 80x70cm'
+    }
+]
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -16,89 +78,20 @@ bodyClass: gallery
         <div class="full-gallery__title title">Gallery</div>
         <div class="container">
            <div class="full-gallery__in">
+                {% for picture in gallery %}
                 <div class="full-gallery__item">
-                    <div class="picture">
+                    <a  href="img/{{picture.srcImg}}" class="fancybox picture" data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
                         <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
+                            <img src="img/{{picture.srcImg}}" alt="">
                         </div>
 
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
+                        <div class="picture__name">{{picture.name}}</div>
+                        <div class="picture__text">{{picture.descr}}</div>
+                    </a>
                     
                 </div>
 
-                <div class="full-gallery__item">
-                    <div class="picture">
-                        <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
-                        </div>
-
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
-                    
-                </div>
-
-                <div class="full-gallery__item">
-                    <div class="picture">
-                        <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
-                        </div>
-
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
-                    
-                </div>
-
-                <div class="full-gallery__item">
-                    <div class="picture">
-                        <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
-                        </div>
-
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
-                    
-                </div>
-
-                <div class="full-gallery__item">
-                    <div class="picture">
-                        <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
-                        </div>
-
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
-                    
-                </div>
-
-                <div class="full-gallery__item">
-                    <div class="picture">
-                        <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
-                        </div>
-
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
-                    
-                </div>
-
-                <div class="full-gallery__item">
-                    <div class="picture">
-                        <div class="picture__media">
-                            <img src="img/hero1.jpg" alt="">
-                        </div>
-
-                        <div class="picture__name">ADDICTED WITH FAIRYTALES</div>
-                        <div class="picture__text">oil on canvas 80x70cm</div>
-                    </div>
-                    
-                </div>
+                {% endfor %}
             </div> 
         </div>
         
