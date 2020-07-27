@@ -52,7 +52,7 @@ export default function animation() {
     .fromTo($heroBgRight, {opacity: 0.8}, {opacity: 0}, 2.1)
     .fromTo($heroBgLeft, {opacity: 0.8}, {opacity: 0}, 2.1)
     .from($logo, {marginLeft: -1000, duration: 2, delay: -1.5})
-    .from($title, {marginLeft: -2000, opacity: 1, duration: 3, delay: -1.5})
+    .from($title, {marginLeft: -2500, opacity: 1, duration: 3, delay: -1.5})
     .from($autor, {y: 200, opacity: 0, duration: 2, delay: -1.5})
     .to($navLink, {marginTop: 0, opacity: 1, stagger: 0.3, delay: -2.5})
     .to($socialLink, {marginRight: 20, marginTop: 0, stagger: 0.3, delay: -1.5})

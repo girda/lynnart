@@ -46,6 +46,9 @@ body
 .out
     position: relative
     overflow: hidden
+    display: flex
+    flex-direction: column
+    min-height: 100vh
 .container
     width: 1240px
     margin: 0 auto
@@ -78,6 +81,9 @@ body
     font-size: 24px
     letter-spacing: 10px
     color: white
+    a 
+        color: white
+        text-decoration: none
 
     +r(500)
         font-size: 18px
@@ -250,6 +256,7 @@ body
     z-index: 9998
 
 .footer
+    margin-top: auto
 
     &__in
         display: flex

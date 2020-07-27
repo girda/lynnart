@@ -60,7 +60,6 @@ title: Lynnart
             style="width: {{item.size}}px; height: {{item.size * 0.65}}px"
         >
             <img src="img/{{item.url}}.png" alt="" style="width: {{item.size}}px;">
-            <!-- {% include "icons/_cloud.html" %} -->
         </div>
     {% endfor %}
     
@@ -136,10 +135,10 @@ title: Lynnart
                 <div class="slider__item">
                     <a href="img/{{ slide.imgSrc }}" class="fancybox slide" data-caption="&lt;b&gt;{{ slide.name }}&lt;/b&gt;&lt;br /&gt;{{ slide.technology }} {{ slide.size }}">
                         <img src="img/{{ slide.imgSrc }}" alt="">
-                        <p class="slide__descr">
-                            <span>{{ slide.name }}</span>
-                            <span>{{ slide.technology }} {{ slide.size }}</span>
-                        </p>
+                        <div class="slide__descr">
+                            <p>{{ slide.name }}</p>
+                            <p>{{ slide.technology }} {{ slide.size }}</p>
+                        </div>
                     </a>
                 </div>
                 {% endfor %}
