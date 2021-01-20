@@ -69,7 +69,7 @@
     "webpack-glsl-loader": "^1.0.1"
   },
   "dependencies": {
-    "gsap": "^3.3.3",
+    "gsap": "^3.6.0",
     "imports-loader": "^1.0.0",
     "scrollmagic": "^2.0.7",
     "scrollmagic-plugin-gsap": "^1.0.4",
